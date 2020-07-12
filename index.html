@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <div>
+    <h1> Complete the tasks to earn!! </h1>
+    <p> After completing the tasks, message/whatsapp your bank details to <a href="tel:8275269688">8275269688</a></p>
+  </div>
+  <h2>Task #1</h2>
+  <div id="task1">
+    <p>
+      #1. Send form using JavaScript to app.kwikpic.in/api/image/
+      <br>
+      #2. Append image in canvas as image to form. Name the field (JSON Key) "image"
+      <br>
+      #3. Check if you get status code as 201-created
+      <br>
+      <b>Bonus</b>: Prevent default behaviour (Prevent page refresh)
+    </p>
+
+    Form for task #1:
+    <form name="myform" id="myform">
+      <input name="name" placeholder="name">
+      <input name="email" placeholder="email">
+      <input name="ucode" placeholder="unique code">
+      <button onclick="submit()">Submit</button>
+
+      <br><br>
+      <canvas id="myCanvas" width="300" height="150" style="border:1px solid #d3d3d3;">
+        Your browser does not support the HTML5 canvas tag.</canvas>
+
+    </form>
+
+    <script>
+      var c = document.getElementById("myCanvas");
+      var ctx = c.getContext("2d");
+      ctx.beginPath();
+      ctx.arc(100, 75, 50, 0, 2 * Math.PI);
+      ctx.stroke();
+
+      function submit() {
+        // #1. Send form using JavaScript to app.kwikpic.in/api/image/
+        // #2. Append image in canvas as image to form. Name the field (JSON Key) "image"
+        // #3. Check if you get status code as 201-created as response from the API
+        // Small Bonus: Prevent default behaviour (Prevent page refresh)
+      }
+    </script>
+  </div>
+
+  <h2>Task #2</h2>
+  <div id="task2">
+    Write a python code to download a shared google drive folder
+
+  </div>
+  <footer>
+    <a href="https://github.com/kwikpic-in/public-offerings/blob/master/index.html">Source</a>
+  </footer>
+</body>
+<style>
+  input,
+  canvas {
+    display: block;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    margin: 0;
+    padding: 0;
+  }
+
+  p {
+    margin: 0;
+    padding-bottom: 0.5em;
+  }
+
+  [id^="task"] {
+    padding: 0 2em;
+    margin-bottom: 2em;
+  }
+</style>
+
+</html>
